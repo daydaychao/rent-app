@@ -1,0 +1,8 @@
+{
+    "A001": "User not exist",
+    "A002": "Scooter not exist",
+    "A003": "Rental fail, user need to return the car, license plate={licensePlate}",
+    "A004": "Rental fail, the scooter is already in rental status",
+    "A005": "Account not exist",
+    "A006": "Account is exist"
+}

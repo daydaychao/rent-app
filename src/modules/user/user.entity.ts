@@ -1,8 +1,15 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+  Unique,
+} from "typeorm";
 import Rent from "../rent/rent.entity";
 import Base from "../../common/entities/base.entity";
 
-@Entity()
+@Entity({ name: "user" })
+@Unique(["account"])
 export default class User extends Base {
   /**
    * 流水號 id (自動產生)
@@ -19,11 +26,11 @@ export default class User extends Base {
   @Column()
   email: string;
 
-  @Column()
-  password: string;
+  @Column({ comment: "帳號" })
+  account: string;
 
-  @Column()
-  password2: string;
+  @Column({ comment: "密碼" })
+  password: string;
 
   @OneToMany(() => Rent, (rent) => rent.id)
   rents: Rent[];

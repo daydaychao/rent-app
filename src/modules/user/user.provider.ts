@@ -3,12 +3,14 @@ import {
   DATA_SOURCE,
   USER_REPOSITORY,
 } from "../../common/constants/database.constants";
-import User from "./user.entity";
+import { UserRepository } from "./user.repository";
 
-export const userProviders = [
+export const userProvider = [
   {
     provide: USER_REPOSITORY,
-    useFactory: (dataSource: DataSource) => dataSource.getRepository(User),
+    useFactory: (dataSource: DataSource) => {
+      return new UserRepository(dataSource);
+    },
     inject: [DATA_SOURCE],
   },
 ];
