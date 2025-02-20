@@ -2,6 +2,11 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
+## 原始專案在此
+[這是fork自朋友的專案]([https://github.com/nestjs/nest](https://github.com/PrettySmile/rent-app))
+
+練功中
+
 ## 說明
 - node v22.13.1
 - npm v10.9.2
