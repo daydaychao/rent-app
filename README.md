@@ -3,7 +3,7 @@
 </p>
 
 ## 原始專案在此
-[這是fork自朋友的專案]([https://github.com/nestjs/nest](https://github.com/PrettySmile/rent-app))
+[這是fork自朋友的專案](https://github.com/PrettySmile/rent-app)
 
 練功中
 
